@@ -48,7 +48,7 @@ count(eruptions2000)
 794-715
 
 # Analysis 4: Which regions have had the most eruptions?
-# Lets do this for all volcanos first, over entire period, including unconfirmed cases.
+# Lets do this for all volcanoes first, over entire period, including unconfirmed cases.
 # Answer: South America (117), Japan/Taiwan/Marianas (102), Indonesia (95).
 volcano %>%
   group_by(region) %>%
@@ -92,7 +92,7 @@ volcano %>%
 
 # Analysis 7: Mystery of confirmed eruptions w/ volcano_number, but missing volcano information
 
-# The following result shows 201 unique volcanos have erupted since 2000, total of 715 eruptions.
+# The following result shows 201 unique volcanoes have erupted since 2000, total of 715 eruptions.
 # Which of these 201 volcanoes are not in the 150 list?
 
 eruptions2000 %>%
@@ -105,7 +105,7 @@ eruptions2000 %>%
   group_by(volcano_number) %>%
   anti_join(., volcano2000, by = "volcano_number")
 
-# There are many volcanos with confirmed eruptions, but are not on the Volcano data list.
+# There are many volcanoes with confirmed eruptions, but are not on the Volcano data list.
 # This means that regional/country data for these eruptions is not available.
 # Plausible reasons: It may be that these volcanoes are not part of any country.
 # Or, the Volcano list is not updated (although, its unusual because they have volcano_numbers)
