@@ -1,6 +1,6 @@
 # 2020_05_12 Volcano Eruptions
 # Functions I learned:
-# semi_join() & inner_join() https://dplyr.tidyverse.org/reference/join.html
+# semi_join() & inner_join() & anti_join() https://dplyr.tidyverse.org/reference/join.html
 
 # Tidy Tuesday R Data Wrangling
 
